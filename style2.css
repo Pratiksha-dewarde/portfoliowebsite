@@ -1,0 +1,186 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url('https://wallpaperaccess.com/full/5651990.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff; /* Ensure text contrasts well with the background */
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: white ;
+}
+
+p {
+    color: white ;
+}
+
+/* Navigation Styles */
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #004d99;
+    padding: 10px 0;
+    z-index: 1000;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, width 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ffd700; /* Gold hover color */
+    color: #333; /* Text color on hover */
+}
+
+/* Home Section - Full Width */
+.bio {
+    width: 100%; /* Ensures the Home section takes the full width */
+    height: 100vh; /* Ensures the Home section takes the full viewport height */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    background: none; /* Remove background color to allow body background image */
+}
+
+.bio h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.bio p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.highlight {
+    color: yellow; /* Gold */
+}
+
+/* Achievements & Projects */
+.achievements, .projects {
+    padding: 60px 20px;
+}
+
+.achievements h1, .projects h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.achievements .achievement, .projects .project {
+    background-color: #004d99;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.achievements h2, .projects h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.achievements h4 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #004d99;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 18px;
+}
+
+footer a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #ffcc00;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ffd700;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .bio h1 {
+        font-size: 32px;
+    }
+
+    .achievements h1, .projects h1 {
+        font-size: 28px;
+    }
+
+    .achievements .achievement, .projects .project {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .bio h1 {
+        font-size: 24px;
+    }
+
+    .bio p {
+        font-size: 16px;
+    }
+}
